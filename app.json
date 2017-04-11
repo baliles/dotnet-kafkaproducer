@@ -1,0 +1,45 @@
+{
+  "name": "dotnet-kafkaproducer",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "ADMINIUM_URL": {
+      "required": true
+    },
+    "DBINSIGHTS_URL": {
+      "required": true
+    },
+    "LOGDNA_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LICENSE_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LOG": {
+      "required": true
+    },
+    "XPLENTY_ACCOUNT_ID": {
+      "required": true
+    },
+    "XPLENTY_API_KEY": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "adminium",
+    "dbinsights",
+    "herokuconnect",
+    "logdna",
+    "newrelic",
+    "heroku-postgresql",
+    "xplenty"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku-softtrends/dotnetcore.postgress.buildpack.git"
+    }
+  ]
+}
